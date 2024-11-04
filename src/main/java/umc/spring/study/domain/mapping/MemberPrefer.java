@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import umc.spring.study.domain.Base.BaseEntity;
 import umc.spring.study.domain.Member;
-import umc.spring.study.domain.foodCategory;
+import umc.spring.study.domain.FoodCategory;
 
 @Entity
 @Getter
@@ -23,7 +23,7 @@ public class MemberPrefer extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id")
-    private foodCategory foodCategory;
+    private FoodCategory foodCategory;
 
 
 }
